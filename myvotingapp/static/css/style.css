@@ -1,0 +1,27 @@
+*{
+    color: rgb(221, 210, 210);
+    background-color: rgb(213, 179, 179);
+}
+button {
+    color: white;
+    background-color: blue;
+    /* font: rgb(0, 255, 8); */
+    /* size: 2000px; */
+    padding: 20px 40px ;
+    margin: 4px 2px;
+    box-sizing: border-box;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+    /* align-items: center; */
+    border: 10px;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+}

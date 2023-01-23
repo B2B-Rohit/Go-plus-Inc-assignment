@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Like Dislike</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="flex">
+    <form action = "{% url 'like' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" value="Like">Like</button>
+    </form>
+    <form action="{% url 'dislike' %}" method="post">
+        {% csrf_token %}
+        <!-- <button></button> -->
+        <button type="submit" value="Dislike">Dislike </button>
+    </form>
+    </div>
+    <div class = "flex">
+    <p>Like: {{ count.like_count }}</p>
+    <p>Dislike: {{ count.dislike_count }}</p>
+    </div>
+</body>
+</html>
